@@ -1,0 +1,14 @@
+uuid: 40974e13-3f9c-43e9-9acb-f2ac77eb5938
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.premium_content_creator
+  module:
+    - user
+id: user_add_role_action.premium_content_creator
+label: 'Add the Premium Content creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: premium_content_creator

@@ -1,0 +1,24 @@
+uuid: e6f058c5-ee87-4f85-9e0b-c4257641fcfb
+langcode: en
+status: true
+dependencies: {  }
+id: premium_content_creator
+label: 'Premium Content creator'
+weight: 15
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'create premium_content content'
+  - 'create url aliases'
+  - 'edit own premium_content content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view own unpublished content'
+  - 'view premium_content revisions'

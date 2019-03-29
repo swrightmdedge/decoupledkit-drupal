@@ -1,0 +1,29 @@
+uuid: 659c6b01-6242-4666-96a1-b44fce417a24
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.premium_content.body
+    - node.type.premium_content
+  module:
+    - text
+    - user
+id: node.premium_content.teaser
+targetEntityType: node
+bundle: premium_content
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  scheduled_publication: true

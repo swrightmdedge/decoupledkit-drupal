@@ -1,0 +1,14 @@
+uuid: a6b5e9ae-296f-487b-ad57-6e1548ddd6dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.premium_content_creator
+  module:
+    - user
+id: user_remove_role_action.premium_content_creator
+label: 'Remove the Premium Content creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: premium_content_creator

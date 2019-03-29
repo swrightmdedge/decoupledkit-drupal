@@ -1,0 +1,19 @@
+uuid: 21eb0863-5a56-4859-9c70-6e00b607614f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_a
+    - node.type.dogs
+id: node.dogs.field_test_a
+field_name: field_test_a
+entity_type: node
+bundle: dogs
+label: 'Test A'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

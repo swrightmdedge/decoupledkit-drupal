@@ -1,0 +1,27 @@
+uuid: 93bc2608-cce9-4484-8a9e-c694dc46d83e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.premium_content.body
+    - node.type.premium_content
+  module:
+    - text
+    - user
+id: node.premium_content.default
+targetEntityType: node
+bundle: premium_content
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  scheduled_publication: true

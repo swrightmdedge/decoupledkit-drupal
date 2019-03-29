@@ -1,0 +1,14 @@
+uuid: 9ae78872-6a6b-4960-8700-4f2f1f48d672
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.premium_content_reviewer
+  module:
+    - user
+id: user_remove_role_action.premium_content_reviewer
+label: 'Remove the Premium Content reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: premium_content_reviewer

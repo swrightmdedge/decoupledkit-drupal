@@ -1,0 +1,23 @@
+content_access_roles_gids:
+  anonymous: 1
+  authenticated: 2
+  administrator: 3
+  page_creator: 4
+  page_reviewer: 5
+  media_creator: 6
+  media_manager: 7
+  dogs_creator: 8
+  dogs_reviewer: 9
+  marvel_characters_creator: 10
+  marvel_characters_reviewer: 11
+  pokemon_creator: 12
+  pokemon_reviewer: 13
+  client_creator: 14
+  client_reviewer: 15
+  premium_content_creator: 16
+  premium_content_reviewer: 17
+  premium: 18
+_core:
+  default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
+content_access_node_type:
+  premium_content: 'a:1:{s:4:"view";a:1:{i:0;s:7:"premium";}}'

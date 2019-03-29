@@ -1,0 +1,11 @@
+uuid: bd8f74be-9c57-4184-ae48-0fc2bcdd99bf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Premium Content'
+type: premium_content
+description: 'Content that is restricted to certain user accounts.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

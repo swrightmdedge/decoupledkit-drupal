@@ -1,0 +1,15 @@
+uuid: 7bf34b86-23e2-43bf-9263-bfd95a23adfe
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: 'Role to identify users who have access to premium content.'
+id: premium
+label: Premium
+weight: 17
+is_admin: null
+permissions:
+  - 'grant simple_oauth codes'

@@ -1,0 +1,15 @@
+uuid: 6c58b598-f1f5-48f1-b37b-a255b6a9c387
+langcode: en
+status: true
+dependencies: {  }
+id: premium_content_reviewer
+label: 'Premium Content reviewer'
+weight: 16
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any premium_content content'
+  - 'edit any premium_content content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'
