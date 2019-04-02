@@ -1,0 +1,21 @@
+uuid: a87e8ad3-5fc8-4e63-91aa-623e93b1153c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_telephone_test_a
+    - node.type.marvel_characters
+  module:
+    - telephone
+id: node.marvel_characters.field_telephone_test_a
+field_name: field_telephone_test_a
+entity_type: node
+bundle: marvel_characters
+label: 'Telephone Test A'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

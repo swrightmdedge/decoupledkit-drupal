@@ -1,0 +1,16 @@
+md3_publication.list_page:
+  path: '/admin/config/md3/publications'
+  defaults:
+    _controller: '\Drupal\md3_publication\Controller\PublicationsListController::content'
+    _title: 'Publications'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+system.admin_config_md3:
+  path: '/admin/config/md3'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'MD3'
+  requirements:
+    _permission: 'access administration pages'

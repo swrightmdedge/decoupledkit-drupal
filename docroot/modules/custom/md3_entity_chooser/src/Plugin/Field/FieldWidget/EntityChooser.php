@@ -26,7 +26,13 @@ class EntityChooser extends WidgetBase implements WidgetInterface {
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
     $element = [];
 
-
+    $element['value'] = $element + array(
+      '#type' => 'select',
+      '#options' => $countries,
+      '#empty_value' => '',
+      '#default_value' => (isset($items[$delta]->value) && isset($countries[$items[$delta]->value])) ? $items[$delta]->value : NULL,
+      '#description' => t('Select a country'),
+    );
 
     return $element;
   }

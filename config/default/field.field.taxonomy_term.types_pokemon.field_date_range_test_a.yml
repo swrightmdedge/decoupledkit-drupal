@@ -1,0 +1,21 @@
+uuid: 3ed86a8f-d8e8-4e7f-afd9-d7144f745f25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_range_test_a
+    - taxonomy.vocabulary.types_pokemon
+  module:
+    - datetime_range
+id: taxonomy_term.types_pokemon.field_date_range_test_a
+field_name: field_date_range_test_a
+entity_type: taxonomy_term
+bundle: types_pokemon
+label: 'Date Range Test A'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

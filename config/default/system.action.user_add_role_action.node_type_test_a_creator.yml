@@ -1,0 +1,14 @@
+uuid: a163de04-77c5-4db7-8e55-100e8cd0b843
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.node_type_test_a_creator
+  module:
+    - user
+id: user_add_role_action.node_type_test_a_creator
+label: 'Add the Node Type Test A creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: node_type_test_a_creator

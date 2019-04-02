@@ -1,0 +1,23 @@
+uuid: ff95975a-3d4d-44db-889a-72a685b3b597
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_test_1
+    - field.field.block_content.block_test_1.body
+  module:
+    - text
+id: block_content.block_test_1.default
+targetEntityType: block_content
+bundle: block_test_1
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  scheduled_publication: true

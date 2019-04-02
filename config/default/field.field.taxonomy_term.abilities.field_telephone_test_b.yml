@@ -1,0 +1,21 @@
+uuid: 0aaf1723-fe4f-4c00-858e-fe3960285cbb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_telephone_test_b
+    - taxonomy.vocabulary.abilities
+  module:
+    - telephone
+id: taxonomy_term.abilities.field_telephone_test_b
+field_name: field_telephone_test_b
+entity_type: taxonomy_term
+bundle: abilities
+label: 'Telephone Test B'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

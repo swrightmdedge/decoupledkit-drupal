@@ -1,0 +1,20 @@
+uuid: e5366942-ff66-4254-b527-b3d5695ebf52
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime_range
+    - taxonomy
+id: taxonomy_term.field_date_range_test_a
+field_name: field_date_range_test_a
+entity_type: taxonomy_term
+type: daterange
+settings:
+  datetime_type: allday
+module: datetime_range
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

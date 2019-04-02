@@ -1,0 +1,21 @@
+uuid: a3b6adf0-d7c3-4fa5-8d09-6ce071886f96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_audio_test_a
+    - node.type.marvel_characters
+id: node.marvel_characters.field_audio_test_a
+field_name: field_audio_test_a
+entity_type: node
+bundle: marvel_characters
+label: 'Audio Test A'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 666227eb-94ca-4a21-b978-485a9cdde3ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_b_abcdefghijklemnedop
+    - node.type.marvel_characters
+id: node.marvel_characters.field_test_b_abcdefghijklemnedop
+field_name: field_test_b_abcdefghijklemnedop
+entity_type: node
+bundle: marvel_characters
+label: 'Test B'
+description: asdfasdf
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

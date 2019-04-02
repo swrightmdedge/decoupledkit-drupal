@@ -1,0 +1,21 @@
+uuid: 1abe1e94-7f33-4de8-963c-b38dd06790a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_date_test_a
+    - taxonomy.vocabulary.types_pokemon
+  module:
+    - datetime
+id: taxonomy_term.types_pokemon.field_date_test_a
+field_name: field_date_test_a
+entity_type: taxonomy_term
+bundle: types_pokemon
+label: 'Date Test A'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

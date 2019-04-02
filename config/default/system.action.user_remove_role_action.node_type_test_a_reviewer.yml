@@ -1,0 +1,14 @@
+uuid: 97128acf-ffc9-461b-9b7d-a6fc59f08ea3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.node_type_test_a_reviewer
+  module:
+    - user
+id: user_remove_role_action.node_type_test_a_reviewer
+label: 'Remove the Node Type Test A reviewer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: node_type_test_a_reviewer

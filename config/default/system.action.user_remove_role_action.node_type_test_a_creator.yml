@@ -1,0 +1,14 @@
+uuid: 400d7f9d-40e7-4945-acf3-8419dcbff552
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.node_type_test_a_creator
+  module:
+    - user
+id: user_remove_role_action.node_type_test_a_creator
+label: 'Remove the Node Type Test A creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: node_type_test_a_creator

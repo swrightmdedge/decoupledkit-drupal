@@ -1,0 +1,24 @@
+uuid: 178022d7-e934-4cc3-aabd-8d1a4505fa6b
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_test_a_creator
+label: 'Node Type Test A creator'
+weight: 18
+is_admin: null
+permissions:
+  - 'access contextual links'
+  - 'access image_browser entity browser pages'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'create node_type_test_a content'
+  - 'create url aliases'
+  - 'edit own node_type_test_a content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition review'
+  - 'use text format rich_text'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view node_type_test_a revisions'
+  - 'view own unpublished content'

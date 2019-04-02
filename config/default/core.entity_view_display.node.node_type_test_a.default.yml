@@ -1,0 +1,27 @@
+uuid: 17f27370-d5e6-4dcc-91c4-3d0d2c53f561
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.node_type_test_a.body
+    - node.type.node_type_test_a
+  module:
+    - text
+    - user
+id: node.node_type_test_a.default
+targetEntityType: node
+bundle: node_type_test_a
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  scheduled_publication: true

@@ -1,0 +1,14 @@
+uuid: aa4cacdc-0856-476a-baa6-95db486302cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.node_type_test_a_reviewer
+  module:
+    - user
+id: user_add_role_action.node_type_test_a_reviewer
+label: 'Add the Node Type Test A reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: node_type_test_a_reviewer

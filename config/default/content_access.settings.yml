@@ -17,6 +17,8 @@ content_access_roles_gids:
   premium_content_creator: 16
   premium_content_reviewer: 17
   premium: 18
+  node_type_test_a_creator: 19
+  node_type_test_a_reviewer: 20
 _core:
   default_config_hash: 7LkiviGITIpniIOOIzpuxR7r4XzqqYN_cwu0fb0kx1M
 content_access_node_type:

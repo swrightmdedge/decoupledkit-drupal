@@ -1,0 +1,11 @@
+drupal.md3_publication:
+  version: VERSION
+  js:
+    js/md3_publication.js: {}
+  css:
+    component:
+      css/md3_publication.theme.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings

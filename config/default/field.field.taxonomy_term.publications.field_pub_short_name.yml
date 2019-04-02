@@ -1,0 +1,19 @@
+uuid: 88667a4e-4fd5-487e-bd57-1352951740ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_pub_short_name
+    - taxonomy.vocabulary.publications
+id: taxonomy_term.publications.field_pub_short_name
+field_name: field_pub_short_name
+entity_type: taxonomy_term
+bundle: publications
+label: 'Short Name'
+description: 'The machine name of this Publication. May not be modified.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,24 +1,18 @@
-uuid: c1cce78c-7488-482c-bc75-9c0ad59d8d99
+uuid: 4dd9efcf-ae9f-4020-bb03-72d1711e2e39
 langcode: en
 status: true
 dependencies:
   config:
-    - entity_browser.browser.image_browser
-    - field.field.node.dogs.body
-    - field.field.node.dogs.field_chooser_test_a
-    - field.field.node.dogs.field_dog_picture
-    - field.field.node.dogs.field_history_and_background
-    - field.field.node.dogs.field_test_a
-    - node.type.dogs
+    - field.field.node.node_type_test_a.body
+    - node.type.node_type_test_a
   module:
     - content_moderation
     - datetime
-    - entity_browser
     - path
     - text
-id: node.dogs.default
+id: node.node_type_test_a.default
 targetEntityType: node
-bundle: dogs
+bundle: node_type_test_a
 mode: default
 content:
   body:
@@ -36,45 +30,6 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_chooser_test_a:
-    weight: 126
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_dog_picture:
-    type: entity_browser_file
-    weight: 124
-    settings:
-      entity_browser: image_browser
-      field_widget_edit: true
-      field_widget_remove: true
-      view_mode: default
-      preview_image_style: thumbnail
-      open: true
-      selection_mode: selection_append
-    region: content
-    third_party_settings: {  }
-  field_history_and_background:
-    weight: 123
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    type: text_textarea_with_summary
-    region: content
-  field_test_a:
-    weight: 125
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   moderation_state:
     type: moderation_state_default
     weight: 100

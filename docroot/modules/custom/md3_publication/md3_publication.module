@@ -1,0 +1,47 @@
+<?php
+
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\field\Entity\FieldStorageConfig;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter()
+ *
+ * @param $form
+ * @param FormStateInterface $form_state
+ * @param $form_id
+ */
+function md3_publication_form_taxonomy_term_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+
+  if (isset($form['vid']['#value']) && $form['vid']['#value'] == 'publications') {
+
+    // Disable certain fields.
+    $form['hierarchy']['#disabled'] = TRUE;
+    $form['vid']['#disabled'] = TRUE;
+    $form['field_pub_short_name']['#disabled'] = TRUE;
+
+    // Do not allow delete.
+    $form['actions']['delete']['#access'] = FALSE;
+
+    /*
+Get allowed options of a field
+$entityManager = \Drupal::service('entity_field.manager');
+$fields = $entityManager->getFieldStorageDefinitions('node');
+$options = options_allowed_values($fields['field_MYLIST']);
+     */
+
+  }
+}
+
+function md3_publication_allowed_values_function(FieldStorageConfig $definition, ContentEntityInterface $entity = NULL, $cacheable) {
+  $options = [
+    'left' => 'Left',
+    'right' => 'Right',
+  ];
+  // Add a custom alignment option for Article nodes.
+  if ($entity->bundle() == 'article') {
+    $options['center'] = 'Center';
+  }
+
+  return $options;
+}

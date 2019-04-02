@@ -1,0 +1,21 @@
+uuid: 5d1e6592-9910-438a-946e-a8689611c287
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_pub_type
+    - taxonomy.vocabulary.publications
+  module:
+    - options
+id: taxonomy_term.publications.field_pub_type
+field_name: field_pub_type
+entity_type: taxonomy_term
+bundle: publications
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

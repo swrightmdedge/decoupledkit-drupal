@@ -1,0 +1,20 @@
+uuid: 1b99a0db-8e74-4918-a167-321fff9321a6
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_audio_test_a
+field_name: field_audio_test_a
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

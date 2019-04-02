@@ -1,0 +1,11 @@
+uuid: 2afeae0e-aa90-4cfc-852c-17747c17bcf7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Node Type Test A'
+type: node_type_test_a
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

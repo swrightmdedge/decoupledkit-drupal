@@ -1,0 +1,44 @@
+uuid: e67be494-4ac5-4d9a-8db3-74a2e70b4cbe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.types_pokemon.field_date_range_test_a
+    - field.field.taxonomy_term.types_pokemon.field_date_test_a
+    - taxonomy.vocabulary.types_pokemon
+  module:
+    - datetime
+    - datetime_range
+    - text
+id: taxonomy_term.types_pokemon.default
+targetEntityType: taxonomy_term
+bundle: types_pokemon
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_range_test_a:
+    weight: 2
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
+    region: content
+  field_date_test_a:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

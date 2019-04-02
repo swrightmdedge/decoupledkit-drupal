@@ -1,0 +1,43 @@
+uuid: 0be5d809-31bf-4851-bec2-8f5fbe969d42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.abilities.field_link_test_a
+    - field.field.taxonomy_term.abilities.field_telephone_test_b
+    - taxonomy.vocabulary.abilities
+  module:
+    - link
+    - text
+id: taxonomy_term.abilities.default
+targetEntityType: taxonomy_term
+bundle: abilities
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link_test_a:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_telephone_test_b:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

@@ -1,0 +1,15 @@
+uuid: f300dc68-c046-4837-9eb7-b7e6d4e5bdab
+langcode: en
+status: true
+dependencies: {  }
+id: node_type_test_a_reviewer
+label: 'Node Type Test A reviewer'
+weight: 19
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'delete any node_type_test_a content'
+  - 'edit any node_type_test_a content'
+  - 'use editorial transition archive'
+  - 'use editorial transition publish'
+  - 'use editorial transition review'

@@ -1,0 +1,22 @@
+uuid: 966d6e38-3439-4087-9a57-67de7259ff15
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.marvel_characters
+  module:
+    - text
+id: node.marvel_characters.body
+field_name: body
+entity_type: node
+bundle: marvel_characters
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

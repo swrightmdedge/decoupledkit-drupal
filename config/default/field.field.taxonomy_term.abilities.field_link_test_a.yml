@@ -1,0 +1,23 @@
+uuid: 02c2e53d-615d-4b39-9b58-986422283df0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_link_test_a
+    - taxonomy.vocabulary.abilities
+  module:
+    - link
+id: taxonomy_term.abilities.field_link_test_a
+field_name: field_link_test_a
+entity_type: taxonomy_term
+bundle: abilities
+label: 'Link Test A'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

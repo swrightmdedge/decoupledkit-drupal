@@ -1,6 +1,7 @@
 name: MD3 - Entity Chooser
 description: Advanced widget for Entity Reference fields.
 package: md3
-
 core: 8.x
 type: module
+dependencies:
+  - field

@@ -3,27 +3,58 @@ langcode: en
 status: true
 dependencies:
   config:
+    - entity_browser.browser.media_browser
+    - field.field.node.marvel_characters.body
+    - field.field.node.marvel_characters.field_audio_test_a
     - field.field.node.marvel_characters.field_description
     - field.field.node.marvel_characters.field_image_reference
     - field.field.node.marvel_characters.field_marvel_id
     - field.field.node.marvel_characters.field_nemesis
+    - field.field.node.marvel_characters.field_telephone_test_a
     - field.field.node.marvel_characters.field_test_a
+    - field.field.node.marvel_characters.field_test_b_abcdefghijklemnedop
+    - field.field.node.marvel_characters.field_tt_test_a
     - node.type.marvel_characters
   module:
     - content_moderation
     - datetime
+    - entity_browser
     - path
+    - telephone
     - text
 id: node.marvel_characters.default
 targetEntityType: node
 bundle: marvel_characters
 mode: default
 content:
+  body:
+    weight: 127
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
   created:
     type: datetime_timestamp
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_audio_test_a:
+    type: entity_browser_entity_reference
+    weight: 129
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      open: true
+    region: content
     third_party_settings: {  }
   field_description:
     weight: 122
@@ -57,6 +88,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_telephone_test_a:
+    weight: 130
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
   field_test_a:
     weight: 125
     settings:
@@ -64,6 +102,23 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_test_b_abcdefghijklemnedop:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tt_test_a:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   moderation_state:
     type: moderation_state_default

@@ -3,11 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.marvel_characters.body
+    - field.field.node.marvel_characters.field_audio_test_a
     - field.field.node.marvel_characters.field_description
     - field.field.node.marvel_characters.field_image_reference
     - field.field.node.marvel_characters.field_marvel_id
     - field.field.node.marvel_characters.field_nemesis
+    - field.field.node.marvel_characters.field_telephone_test_a
     - field.field.node.marvel_characters.field_test_a
+    - field.field.node.marvel_characters.field_test_b_abcdefghijklemnedop
+    - field.field.node.marvel_characters.field_tt_test_a
     - node.type.marvel_characters
   module:
     - text
@@ -17,6 +22,22 @@ targetEntityType: node
 bundle: marvel_characters
 mode: default
 content:
+  body:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_audio_test_a:
+    type: entity_reference_entity_view
+    weight: 109
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
   field_description:
     weight: 102
     label: above
@@ -48,6 +69,13 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_telephone_test_a:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_test_a:
     weight: 105
     label: above
@@ -55,6 +83,22 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_test_b_abcdefghijklemnedop:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tt_test_a:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100

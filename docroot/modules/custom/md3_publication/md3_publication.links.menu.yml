@@ -1,0 +1,12 @@
+md3_publication.publication_list_page:
+  title: 'Publications'
+  route_name: md3_publication.list_page
+  description: 'Configure Publications'
+  parent: md3_publication.group.admin
+  weight: 99
+md3_publication.group.admin:
+  title: 'MD3'
+  route_name: system.admin_config_md3
+  parent: system.admin_config
+  description: 'MD3 Configuration'
+  weight: -999

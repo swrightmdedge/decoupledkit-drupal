@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.dogs.body
+    - field.field.node.dogs.field_chooser_test_a
     - field.field.node.dogs.field_dog_picture
     - field.field.node.dogs.field_history_and_background
     - field.field.node.dogs.field_test_a
@@ -23,6 +24,14 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_chooser_test_a:
+    weight: 106
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   field_dog_picture:
     weight: 104

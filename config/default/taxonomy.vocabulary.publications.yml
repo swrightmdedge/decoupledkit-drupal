@@ -1,0 +1,14 @@
+uuid: 035edcbf-887f-4a87-beb3-c4031e38e872
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - taxonomy
+_core:
+  default_config_hash: LcZ9G90yZ0X_FGJWgPTFuNmZxnDf8gGAwFQ5upD3Puw
+name: Publications
+vid: publications
+description: 'Publication terms.'
+hierarchy: 0
+weight: 0
